@@ -1,0 +1,798 @@
+Initialize SIGNATURE TABLE
+ST_SET: 1
+ST_WAY: 256
+ST_TAG_BIT: 16
+ST_TAG_MASK: ffff
+
+Initialize PATTERN TABLE
+PT_SET: 512
+PT_WAY: 4
+SIG_DELTA_BIT: 7
+C_SIG_BIT: 4
+C_DELTA_BIT: 4
+
+Initialize PREFETCH FILTER
+FILTER_SET: 1024
+
+Initialize PERCEPTRON
+PERC_ENTRIES: 4096
+PERC_FEATURES: 14
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 20000000
+Simulation Instructions: 100000000
+Number of CPUs: 4
+LLC sets: 8192
+LLC ways: 16
+Off-chip DRAM Size: 8192 MB Channels: 2 Width: 64-bit Data Rate: 1600 MT/s
+
+CPU 0 runs /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core0.trace.gz
+CPU 1 runs /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core1.trace.gz
+CPU 2 runs /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core2.trace.gz
+CPU 3 runs /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core3.trace.gz
+Heartbeat CPU 3 instructions: 10000003 cycles: 3169656 heartbeat IPC: 3.15492 cumulative IPC: 3.15492 (Simulation time: 0 hr 2 min 15 sec) 
+Heartbeat CPU 2 instructions: 10000000 cycles: 3422416 heartbeat IPC: 2.92191 cumulative IPC: 2.92191 (Simulation time: 0 hr 2 min 25 sec) 
+Heartbeat CPU 0 instructions: 10000000 cycles: 3428566 heartbeat IPC: 2.91667 cumulative IPC: 2.91667 (Simulation time: 0 hr 2 min 25 sec) 
+Heartbeat CPU 1 instructions: 10000000 cycles: 3497684 heartbeat IPC: 2.85903 cumulative IPC: 2.85903 (Simulation time: 0 hr 2 min 28 sec) 
+Heartbeat CPU 3 instructions: 20000000 cycles: 6528609 heartbeat IPC: 2.97712 cumulative IPC: 3.06344 (Simulation time: 0 hr 4 min 26 sec) 
+Heartbeat CPU 0 instructions: 20000000 cycles: 6721487 heartbeat IPC: 3.03682 cumulative IPC: 2.97553 (Simulation time: 0 hr 4 min 33 sec) 
+Heartbeat CPU 2 instructions: 20000000 cycles: 6772889 heartbeat IPC: 2.98465 cumulative IPC: 2.95295 (Simulation time: 0 hr 4 min 35 sec) 
+Heartbeat CPU 1 instructions: 20000000 cycles: 6850913 heartbeat IPC: 2.9822 cumulative IPC: 2.91932 (Simulation time: 0 hr 4 min 38 sec) 
+
+Warmup complete CPU 0 instructions: 20408973 cycles: 6850914 (Simulation time: 0 hr 4 min 38 sec) 
+Warmup complete CPU 1 instructions: 20000001 cycles: 6850914 (Simulation time: 0 hr 4 min 38 sec) 
+Warmup complete CPU 2 instructions: 20250394 cycles: 6850913 (Simulation time: 0 hr 4 min 38 sec) 
+Warmup complete CPU 3 instructions: 20949545 cycles: 6850913 (Simulation time: 0 hr 4 min 38 sec) 
+
+Heartbeat CPU 3 instructions: 30000001 cycles: 33095587 heartbeat IPC: 0.376407 cumulative IPC: 0.344849 (Simulation time: 0 hr 6 min 50 sec) 
+Heartbeat CPU 0 instructions: 30000003 cycles: 34774928 heartbeat IPC: 0.356463 cumulative IPC: 0.343469 (Simulation time: 0 hr 6 min 59 sec) 
+Heartbeat CPU 2 instructions: 30000001 cycles: 36203827 heartbeat IPC: 0.339779 cumulative IPC: 0.332151 (Simulation time: 0 hr 7 min 7 sec) 
+Heartbeat CPU 1 instructions: 30000001 cycles: 38593761 heartbeat IPC: 0.315032 cumulative IPC: 0.315032 (Simulation time: 0 hr 7 min 20 sec) 
+Heartbeat CPU 3 instructions: 40000000 cycles: 60885136 heartbeat IPC: 0.359847 cumulative IPC: 0.352563 (Simulation time: 0 hr 9 min 24 sec) 
+Heartbeat CPU 0 instructions: 40000000 cycles: 63158440 heartbeat IPC: 0.352317 cumulative IPC: 0.347929 (Simulation time: 0 hr 9 min 36 sec) 
+Heartbeat CPU 2 instructions: 40000000 cycles: 67981814 heartbeat IPC: 0.314683 cumulative IPC: 0.323071 (Simulation time: 0 hr 10 min 3 sec) 
+Heartbeat CPU 1 instructions: 40000000 cycles: 70502764 heartbeat IPC: 0.313391 cumulative IPC: 0.314209 (Simulation time: 0 hr 10 min 15 sec) 
+Heartbeat CPU 3 instructions: 50000003 cycles: 89102420 heartbeat IPC: 0.354393 cumulative IPC: 0.353191 (Simulation time: 0 hr 12 min 22 sec) 
+Heartbeat CPU 0 instructions: 50000002 cycles: 92713564 heartbeat IPC: 0.338351 cumulative IPC: 0.344632 (Simulation time: 0 hr 12 min 48 sec) 
+Heartbeat CPU 2 instructions: 50000002 cycles: 97358272 heartbeat IPC: 0.340409 cumulative IPC: 0.328698 (Simulation time: 0 hr 13 min 22 sec) 
+Heartbeat CPU 1 instructions: 50000003 cycles: 102173798 heartbeat IPC: 0.315746 cumulative IPC: 0.31472 (Simulation time: 0 hr 13 min 58 sec) 
+Heartbeat CPU 3 instructions: 60000000 cycles: 117745452 heartbeat IPC: 0.349125 cumulative IPC: 0.35214 (Simulation time: 0 hr 15 min 54 sec) 
+Heartbeat CPU 0 instructions: 60000000 cycles: 123618559 heartbeat IPC: 0.323572 cumulative IPC: 0.339058 (Simulation time: 0 hr 16 min 34 sec) 
+Heartbeat CPU 2 instructions: 60000000 cycles: 127299056 heartbeat IPC: 0.333993 cumulative IPC: 0.330014 (Simulation time: 0 hr 17 min 4 sec) 
+Heartbeat CPU 1 instructions: 60000000 cycles: 130236430 heartbeat IPC: 0.356346 cumulative IPC: 0.324187 (Simulation time: 0 hr 17 min 24 sec) 
+Heartbeat CPU 0 instructions: 70000001 cycles: 153864859 heartbeat IPC: 0.330619 cumulative IPC: 0.337322 (Simulation time: 0 hr 20 min 26 sec) 
+Heartbeat CPU 3 instructions: 70000003 cycles: 155223537 heartbeat IPC: 0.266823 cumulative IPC: 0.33059 (Simulation time: 0 hr 20 min 40 sec) 
+Heartbeat CPU 2 instructions: 70000003 cycles: 155495034 heartbeat IPC: 0.354661 cumulative IPC: 0.334689 (Simulation time: 0 hr 20 min 42 sec) 
+Heartbeat CPU 1 instructions: 70000001 cycles: 160503520 heartbeat IPC: 0.330392 cumulative IPC: 0.325409 (Simulation time: 0 hr 21 min 24 sec) 
+Heartbeat CPU 0 instructions: 80000000 cycles: 181440140 heartbeat IPC: 0.362644 cumulative IPC: 0.341321 (Simulation time: 0 hr 24 min 25 sec) 
+Heartbeat CPU 2 instructions: 80000000 cycles: 182807377 heartbeat IPC: 0.366135 cumulative IPC: 0.33957 (Simulation time: 0 hr 24 min 35 sec) 
+Heartbeat CPU 3 instructions: 80000000 cycles: 183330723 heartbeat IPC: 0.355781 cumulative IPC: 0.334602 (Simulation time: 0 hr 24 min 40 sec) 
+Heartbeat CPU 1 instructions: 80000000 cycles: 189864928 heartbeat IPC: 0.340583 cumulative IPC: 0.327844 (Simulation time: 0 hr 25 min 37 sec) 
+Heartbeat CPU 0 instructions: 90000000 cycles: 209594572 heartbeat IPC: 0.355184 cumulative IPC: 0.343246 (Simulation time: 0 hr 28 min 5 sec) 
+Heartbeat CPU 2 instructions: 90000002 cycles: 209856786 heartbeat IPC: 0.369694 cumulative IPC: 0.343584 (Simulation time: 0 hr 28 min 7 sec) 
+Heartbeat CPU 3 instructions: 90000000 cycles: 213913655 heartbeat IPC: 0.32698 cumulative IPC: 0.333476 (Simulation time: 0 hr 28 min 33 sec) 
+Heartbeat CPU 1 instructions: 90000003 cycles: 232430116 heartbeat IPC: 0.234934 cumulative IPC: 0.310312 (Simulation time: 0 hr 30 min 53 sec) 
+*** Reached end of trace for Core: 0 Repeating trace: /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core0.trace.gz
+Heartbeat CPU 0 instructions: 100000000 cycles: 237799981 heartbeat IPC: 0.354542 cumulative IPC: 0.344626 (Simulation time: 0 hr 31 min 27 sec) 
+*** Reached end of trace for Core: 2 Repeating trace: /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core2.trace.gz
+Heartbeat CPU 2 instructions: 100000000 cycles: 238320310 heartbeat IPC: 0.351327 cumulative IPC: 0.344536 (Simulation time: 0 hr 31 min 30 sec) 
+*** Reached end of trace for Core: 3 Repeating trace: /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core3.trace.gz
+Heartbeat CPU 3 instructions: 100000000 cycles: 244491642 heartbeat IPC: 0.327033 cumulative IPC: 0.332647 (Simulation time: 0 hr 32 min 14 sec) 
+*** Reached end of trace for Core: 1 Repeating trace: /scratch/user/eshanbhatia22/THESIS/cloudsuite_traces/cassandra_phase0_core1.trace.gz
+Heartbeat CPU 1 instructions: 100000000 cycles: 262195867 heartbeat IPC: 0.335956 cumulative IPC: 0.313302 (Simulation time: 0 hr 34 min 30 sec) 
+Heartbeat CPU 2 instructions: 110000000 cycles: 268732774 heartbeat IPC: 0.328813 cumulative IPC: 0.34271 (Simulation time: 0 hr 35 min 11 sec) 
+Heartbeat CPU 0 instructions: 110000000 cycles: 268845069 heartbeat IPC: 0.322112 cumulative IPC: 0.341958 (Simulation time: 0 hr 35 min 11 sec) 
+Heartbeat CPU 3 instructions: 110000003 cycles: 270596490 heartbeat IPC: 0.383071 cumulative IPC: 0.337638 (Simulation time: 0 hr 35 min 21 sec) 
+Heartbeat CPU 1 instructions: 110000002 cycles: 294678626 heartbeat IPC: 0.307856 cumulative IPC: 0.312687 (Simulation time: 0 hr 37 min 48 sec) 
+Heartbeat CPU 0 instructions: 120000000 cycles: 297731739 heartbeat IPC: 0.34618 cumulative IPC: 0.342377 (Simulation time: 0 hr 38 min 9 sec) 
+Heartbeat CPU 2 instructions: 120000000 cycles: 298379866 heartbeat IPC: 0.337301 cumulative IPC: 0.34216 (Simulation time: 0 hr 38 min 13 sec) 
+Heartbeat CPU 3 instructions: 120000000 cycles: 298475031 heartbeat IPC: 0.358699 cumulative IPC: 0.339651 (Simulation time: 0 hr 38 min 13 sec) 
+Finished CPU 0 instructions: 100000002 cycles: 292026809 cumulative IPC: 0.342434 (Simulation time: 0 hr 38 min 16 sec) 
+Finished CPU 2 instructions: 100000000 cycles: 292281277 cumulative IPC: 0.342136 (Simulation time: 0 hr 38 min 17 sec) 
+Finished CPU 3 instructions: 100000002 cycles: 294416211 cumulative IPC: 0.339655 (Simulation time: 0 hr 38 min 31 sec) 
+Heartbeat CPU 1 instructions: 120000000 cycles: 324108401 heartbeat IPC: 0.339792 cumulative IPC: 0.315201 (Simulation time: 0 hr 40 min 46 sec) 
+Finished CPU 1 instructions: 100000000 cycles: 317257500 cumulative IPC: 0.315201 (Simulation time: 0 hr 40 min 46 sec) 
+
+CPU 0 Branch Prediction Accuracy: 97.9365% MPKI: 2.54555
+
+CPU 1 Branch Prediction Accuracy: 96.4561% MPKI: 4.51196
+
+CPU 2 Branch Prediction Accuracy: 97.584% MPKI: 2.98729
+
+CPU 3 Branch Prediction Accuracy: 97.5503% MPKI: 3.01858
+
+ChampSim completed all CPUs
+
+Total Simulation Statistics (not including warmup)
+
+CPU 0 cumulative IPC: 0.342473 instructions: 108652153 cycles: 317257500
+L1D TOTAL     ACCESS:   10769144  HIT:    9782163  MISS:     986981
+L1D LOAD      ACCESS:    7264277  HIT:    6382816  MISS:     881461
+L1D RFO       ACCESS:    3504867  HIT:    3399347  MISS:     105520
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I TOTAL     ACCESS:   22628250  HIT:   22384282  MISS:     243968
+L1I LOAD      ACCESS:   22628250  HIT:   22384282  MISS:     243968
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L2C TOTAL     ACCESS:    2241463  HIT:    1036786  MISS:    1204677
+L2C LOAD      ACCESS:    1125429  HIT:     551303  MISS:     574126
+L2C RFO       ACCESS:     105511  HIT:      20974  MISS:      84537
+L2C PREFETCH  ACCESS:     737543  HIT:     193725  MISS:     543818
+L2C WRITEBACK ACCESS:     272980  HIT:     270784  MISS:       2196
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+LLC TOTAL     ACCESS:    1606582  HIT:     649646  MISS:     956936
+LLC LOAD      ACCESS:     536327  HIT:     174980  MISS:     361347
+LLC RFO       ACCESS:      84495  HIT:      23920  MISS:      60575
+LLC PREFETCH  ACCESS:     739513  HIT:     204807  MISS:     534706
+LLC WRITEBACK ACCESS:     246247  HIT:     245939  MISS:        308
+
+CPU 1 cumulative IPC: 0.315201 instructions: 100000000 cycles: 317257500
+L1D TOTAL     ACCESS:   10413580  HIT:    9369092  MISS:    1044488
+L1D LOAD      ACCESS:    6915361  HIT:    5997195  MISS:     918166
+L1D RFO       ACCESS:    3498219  HIT:    3371897  MISS:     126322
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I TOTAL     ACCESS:   20904806  HIT:   20339844  MISS:     564962
+L1I LOAD      ACCESS:   20904806  HIT:   20339844  MISS:     564962
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L2C TOTAL     ACCESS:    3026594  HIT:    1600746  MISS:    1425848
+L2C LOAD      ACCESS:    1483124  HIT:     816369  MISS:     666755
+L2C RFO       ACCESS:     126306  HIT:      31698  MISS:      94608
+L2C PREFETCH  ACCESS:    1101918  HIT:     443448  MISS:     658470
+L2C WRITEBACK ACCESS:     315246  HIT:     309231  MISS:       6015
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+LLC TOTAL     ACCESS:    1905719  HIT:     973013  MISS:     932706
+LLC LOAD      ACCESS:     628447  HIT:     279935  MISS:     348512
+LLC RFO       ACCESS:      94523  HIT:      44373  MISS:      50150
+LLC PREFETCH  ACCESS:     916102  HIT:     382148  MISS:     533954
+LLC WRITEBACK ACCESS:     266647  HIT:     266557  MISS:         90
+
+CPU 2 cumulative IPC: 0.34065 instructions: 108073635 cycles: 317257501
+L1D TOTAL     ACCESS:   10864033  HIT:    9878663  MISS:     985370
+L1D LOAD      ACCESS:    7326752  HIT:    6441335  MISS:     885417
+L1D RFO       ACCESS:    3537281  HIT:    3437328  MISS:      99953
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I TOTAL     ACCESS:   22440353  HIT:   22124005  MISS:     316348
+L1I LOAD      ACCESS:   22440353  HIT:   22124005  MISS:     316348
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L2C TOTAL     ACCESS:    2381057  HIT:    1102519  MISS:    1278538
+L2C LOAD      ACCESS:    1201753  HIT:     590017  MISS:     611736
+L2C RFO       ACCESS:      99950  HIT:      16302  MISS:      83648
+L2C PREFETCH  ACCESS:     807367  HIT:     228161  MISS:     579206
+L2C WRITEBACK ACCESS:     271987  HIT:     268039  MISS:       3948
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+LLC TOTAL     ACCESS:    1696505  HIT:     722151  MISS:     974354
+LLC LOAD      ACCESS:     574383  HIT:     198574  MISS:     375809
+LLC RFO       ACCESS:      83600  HIT:      33930  MISS:      49670
+LLC PREFETCH  ACCESS:     788168  HIT:     239402  MISS:     548766
+LLC WRITEBACK ACCESS:     250354  HIT:     250245  MISS:        109
+
+CPU 3 cumulative IPC: 0.340773 instructions: 108112747 cycles: 317257501
+L1D TOTAL     ACCESS:   10859620  HIT:    9845519  MISS:    1014101
+L1D LOAD      ACCESS:    7296201  HIT:    6385651  MISS:     910550
+L1D RFO       ACCESS:    3563419  HIT:    3459868  MISS:     103551
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I TOTAL     ACCESS:   22445906  HIT:   22087564  MISS:     358342
+L1I LOAD      ACCESS:   22445906  HIT:   22087564  MISS:     358342
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L2C TOTAL     ACCESS:    2527483  HIT:    1228666  MISS:    1298817
+L2C LOAD      ACCESS:    1268889  HIT:     653445  MISS:     615444
+L2C RFO       ACCESS:     103531  HIT:      18696  MISS:      84835
+L2C PREFETCH  ACCESS:     877655  HIT:     282788  MISS:     594867
+L2C WRITEBACK ACCESS:     277408  HIT:     273737  MISS:       3671
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+LLC TOTAL     ACCESS:    1731410  HIT:     778190  MISS:     953220
+LLC LOAD      ACCESS:     580662  HIT:     216373  MISS:     364289
+LLC RFO       ACCESS:      84787  HIT:      32974  MISS:      51813
+LLC PREFETCH  ACCESS:     812169  HIT:     275189  MISS:     536980
+LLC WRITEBACK ACCESS:     253792  HIT:     253654  MISS:        138
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 0.342434 instructions: 100000002 cycles: 292026809
+L1D TOTAL     ACCESS:    9921713  HIT:    9006900  MISS:     914813
+L1D LOAD      ACCESS:    6683460  HIT:    5867265  MISS:     816195
+L1D RFO       ACCESS:    3238253  HIT:    3139635  MISS:      98618
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I TOTAL     ACCESS:   20830275  HIT:   20594712  MISS:     235563
+L1I LOAD      ACCESS:   20830275  HIT:   20594712  MISS:     235563
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C TOTAL     ACCESS:    2098552  HIT:     972441  MISS:    1126111
+L2C LOAD      ACCESS:    1051758  HIT:     517097  MISS:     534661
+L2C RFO       ACCESS:      98609  HIT:      19590  MISS:      79019
+L2C PREFETCH  ACCESS:     694448  HIT:     184159  MISS:     510289
+L2C WRITEBACK ACCESS:     253737  HIT:     251595  MISS:       2142
+L2C PREFETCH  REQUESTED:    1277004  ISSUED:    1276943  USEFUL:     492576  USELESS:     182116
+LLC TOTAL     ACCESS:    1500592  HIT:     616223  MISS:     884369
+LLC LOAD      ACCESS:     499506  HIT:     167251  MISS:     332255
+LLC RFO       ACCESS:      78979  HIT:      23497  MISS:      55482
+LLC PREFETCH  ACCESS:     693387  HIT:     197013  MISS:     496374
+LLC WRITEBACK ACCESS:     228720  HIT:     228462  MISS:        258
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:     173941  USELESS:    2361743
+Major fault: 0 Minor fault: 42336
+
+CPU 1 cumulative IPC: 0.315201 instructions: 100000000 cycles: 317257500
+L1D TOTAL     ACCESS:   10413580  HIT:    9369092  MISS:    1044488
+L1D LOAD      ACCESS:    6915361  HIT:    5997195  MISS:     918166
+L1D RFO       ACCESS:    3498219  HIT:    3371897  MISS:     126322
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I TOTAL     ACCESS:   20904806  HIT:   20339844  MISS:     564962
+L1I LOAD      ACCESS:   20904806  HIT:   20339844  MISS:     564962
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C TOTAL     ACCESS:    3026594  HIT:    1600746  MISS:    1425848
+L2C LOAD      ACCESS:    1483124  HIT:     816369  MISS:     666755
+L2C RFO       ACCESS:     126306  HIT:      31698  MISS:      94608
+L2C PREFETCH  ACCESS:    1101918  HIT:     443448  MISS:     658470
+L2C WRITEBACK ACCESS:     315246  HIT:     309231  MISS:       6015
+L2C PREFETCH  REQUESTED:    1817729  ISSUED:    1817262  USEFUL:     540532  USELESS:     260218
+LLC TOTAL     ACCESS:    1905719  HIT:     973013  MISS:     932706
+LLC LOAD      ACCESS:     628447  HIT:     279935  MISS:     348512
+LLC RFO       ACCESS:      94523  HIT:      44373  MISS:      50150
+LLC PREFETCH  ACCESS:     916102  HIT:     382148  MISS:     533954
+LLC WRITEBACK ACCESS:     266647  HIT:     266557  MISS:         90
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:     173941  USELESS:    2361743
+Major fault: 0 Minor fault: 44990
+
+CPU 2 cumulative IPC: 0.342136 instructions: 100000000 cycles: 292281277
+L1D TOTAL     ACCESS:   10033373  HIT:    9124204  MISS:     909169
+L1D LOAD      ACCESS:    6780045  HIT:    5962368  MISS:     817677
+L1D RFO       ACCESS:    3253328  HIT:    3161836  MISS:      91492
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I TOTAL     ACCESS:   20762752  HIT:   20474203  MISS:     288549
+L1I LOAD      ACCESS:   20762752  HIT:   20474203  MISS:     288549
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C TOTAL     ACCESS:    2190296  HIT:    1012470  MISS:    1177826
+L2C LOAD      ACCESS:    1106216  HIT:     542279  MISS:     563937
+L2C RFO       ACCESS:      91489  HIT:      15051  MISS:      76438
+L2C PREFETCH  ACCESS:     742600  HIT:     208683  MISS:     533917
+L2C WRITEBACK ACCESS:     249991  HIT:     246457  MISS:       3534
+L2C PREFETCH  REQUESTED:    1394863  ISSUED:    1394773  USEFUL:     512863  USELESS:     203526
+LLC TOTAL     ACCESS:    1561850  HIT:     663688  MISS:     898162
+LLC LOAD      ACCESS:     529600  HIT:     183619  MISS:     345981
+LLC RFO       ACCESS:      76391  HIT:      30762  MISS:      45629
+LLC PREFETCH  ACCESS:     726147  HIT:     219694  MISS:     506453
+LLC WRITEBACK ACCESS:     229712  HIT:     229613  MISS:         99
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:     173941  USELESS:    2361743
+Major fault: 0 Minor fault: 43118
+
+CPU 3 cumulative IPC: 0.339655 instructions: 100000002 cycles: 294416211
+L1D TOTAL     ACCESS:   10043887  HIT:    9095182  MISS:     948705
+L1D LOAD      ACCESS:    6748921  HIT:    5899391  MISS:     849530
+L1D RFO       ACCESS:    3294966  HIT:    3195791  MISS:      99175
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I TOTAL     ACCESS:   20735323  HIT:   20389164  MISS:     346159
+L1I LOAD      ACCESS:   20735323  HIT:   20389164  MISS:     346159
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C TOTAL     ACCESS:    2388441  HIT:    1168193  MISS:    1220248
+L2C LOAD      ACCESS:    1195686  HIT:     619997  MISS:     575689
+L2C RFO       ACCESS:      99159  HIT:      17955  MISS:      81204
+L2C PREFETCH  ACCESS:     832788  HIT:     272971  MISS:     559817
+L2C WRITEBACK ACCESS:     260808  HIT:     257270  MISS:       3538
+L2C PREFETCH  REQUESTED:    1406824  ISSUED:    1406265  USEFUL:     503331  USELESS:     200051
+LLC TOTAL     ACCESS:    1626614  HIT:     736337  MISS:     890277
+LLC LOAD      ACCESS:     542900  HIT:     204614  MISS:     338286
+LLC RFO       ACCESS:      81156  HIT:      31905  MISS:      49251
+LLC PREFETCH  ACCESS:     764405  HIT:     261798  MISS:     502607
+LLC WRITEBACK ACCESS:     238153  HIT:     238020  MISS:        133
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:     173941  USELESS:    2361743
+Major fault: 0 Minor fault: 46806
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+Printing all the perceptron weights to: perc_weights_0.csv
+
+
+****HISTOGRAMMING STATS****
+	Index		 hist_tots 		 hist_hits 		 hist_ratio
+      -224   	          0 	          0 	          0
+      -214   	          0 	          0 	          0
+      -204   	          0 	          0 	          0
+      -194   	          0 	          0 	          0
+      -184   	          0 	          0 	          0
+      -174   	          0 	          0 	          0
+      -164   	          0 	          0 	          0
+      -154   	          0 	          0 	          0
+      -144   	          0 	          0 	          0
+      -134   	          0 	          0 	          0
+      -124   	          0 	          0 	          0
+      -114   	          0 	          0 	          0
+      -104   	          0 	          0 	          0
+       -94   	          0 	          0 	          0
+       -84   	          0 	          0 	          0
+       -74   	          0 	          0 	          0
+       -64   	          0 	          0 	          0
+       -54   	          0 	          0 	          0
+       -44   	          0 	          0 	          0
+       -34   	          0 	          0 	          0
+       -24   	     149751 	          0 	          0
+       -14   	    1426524 	      52648 	  0.0369065
+        -4   	    1289924 	     609006 	   0.472126
+         6   	    1129428 	     703972 	     0.6233
+        16   	     891401 	     658537 	   0.738766
+        26   	     578136 	     468837 	   0.810946
+        36   	     286743 	     243154 	   0.847986
+        46   	     107130 	      92716 	   0.865453
+        56   	      29807 	      25904 	   0.869058
+        66   	       6420 	       5577 	   0.868692
+        76   	        993 	        867 	   0.873112
+        86   	        150 	        130 	   0.866667
+        96   	         12 	         11 	   0.916667
+       106   	          1 	          1 	          1
+       116   	          0 	          0 	          0
+       126   	          0 	          0 	          0
+       136   	          0 	          0 	          0
+       146   	          0 	          0 	          0
+       156   	          0 	          0 	          0
+       166   	          0 	          0 	          0
+       176   	          0 	          0 	          0
+       186   	          0 	          0 	          0
+       196   	          0 	          0 	          0
+       206   	          0 	          0 	          0
+       216   	          0 	          0 	          0
+       226   	          0 	          0 	          0
+       236   	          0 	          0 	          0
+       246   	          0 	          0 	          0
+       256   	          0 	          0 	          0
+       266   	          0 	          0 	          0
+       276   	          0 	          0 	          0
+       286   	          0 	          0 	          0
+       296   	          0 	          0 	          0
+       306   	          0 	          0 	          0
+       316   	          0 	          0 	          0
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:     401541  ROW_BUFFER_MISS:    1503827
+ DBUS_CONGESTED:    1821559
+ WQ ROW_BUFFER_HIT:      27522  ROW_BUFFER_MISS:     382643  FULL:          0
+
+ CHANNEL 1
+ RQ ROW_BUFFER_HIT:     403351  ROW_BUFFER_MISS:    1507713
+ DBUS_CONGESTED:    1821559
+ WQ ROW_BUFFER_HIT:      27526  ROW_BUFFER_MISS:     381734  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 13
